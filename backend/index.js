@@ -12,7 +12,7 @@ const { error, log } = require("console");
 app.use(express.json()); //Request from response automatically passed through json
 app.use(cors()); //ReactJS project connect to express app on port 4000
 
-//Database connection with MongoDB
+//Initialise database connection with MongoDB
 mongoose.connect("***REMOVED***");
 
 //API Endpoint: Create root
