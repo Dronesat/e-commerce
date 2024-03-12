@@ -4,7 +4,7 @@ import cross_icon from '../Assets/cross_icon.png'
 
 const ListProduct = () => {
 
-    //Retrive all products using allproducts endpoint
+    //Retrieve all products using allproducts endpoint
     const [allproducts,setAllProducts] = useState([]);
     const fetchInfo = async () => {
         await fetch('http://localhost:4000/allproducts')
@@ -15,7 +15,7 @@ const ListProduct = () => {
         fetchInfo();
     },[])
 
-    //
+    //Remove a product using removeproduct endpoint
     const remove_product = async (id) => {
         await fetch('http://localhost:4000/removeproduct',{
             method:'POST',
