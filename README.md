@@ -9,4 +9,4 @@ admin: npm run dev localhost:5713
 ## Structure
 1. Front-end: ReactJS Shopping website
 2. Back-end: Express Server contains API to communicate with MongoDB
-3. Admin: Upload, View and Delete products 
+3. Admin: Upload, View and Delete products via API
