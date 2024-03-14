@@ -8,12 +8,14 @@ const path = require("path");
 const cors = require("cors");
 const { error, log } = require("console");
 
+//Import dotenv allow access to .env 
+require('dotenv').config();
 
 app.use(express.json()); //Request from response automatically passed through json
 app.use(cors()); //ReactJS project connect to express app on port 4000
 
 //Initialise database connection with MongoDB
-mongoose.connect("***REMOVED***");
+mongoose.connect(process.env.MONGODB_URI);
 
 //API Endpoint: Create root
 app.get("/",(req,res)=>{
